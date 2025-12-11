@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>أ. حسين أبو بكر سعيد</title>
+  <title>أ. حامد بن محمد الزين</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Fonts -->
@@ -91,7 +91,9 @@
       margin-bottom: 14px;
     }
 
-    .item { text-align: center; }
+    .item {
+      text-align: center;
+    }
 
     .item small { 
       font-size: 11px;
@@ -104,12 +106,12 @@
       color: var(--gold);
       font-size: 15px;
       font-family: "Poppins", sans-serif;
-      display: block;
+      display: block;            /* ✅ يخلي الرقم تحت العنوان مثل البريد */
       margin-top: 2px;
     }
 
     .item a[dir="ltr"] {
-      direction: ltr;
+      direction: ltr;           /* ✅ اتجاه الأرقام فقط */
       unicode-bidi: isolate;
     }
 
@@ -134,12 +136,17 @@
       font-size: 14px;
       background: #fff;
       direction: ltr;
+      unicode-bidi: embed;
     }
 
     .btn.call {
       background: var(--teal);
       color: #fff;
       border-color: var(--teal);
+    }
+
+    .btn i {
+      font-size: 15px;
     }
 
     .location {
@@ -169,11 +176,13 @@
       color: var(--teal);
       font-size: 13px;
       font-weight: 600;
+      margin: 0;
     }
 
     .company small {
       color: var(--teal-dark);
       font-size: 11px;
+      margin: 0;
     }
   </style>
 </head>
@@ -187,16 +196,16 @@
     </div>
 
     <div class="content">
-      <div class="name-ar">أ. حسين أبو بكر سعيد</div>
-      <div class="name-en">Hussein Abu Bakr Saeed</div>
+      <div class="name-ar">أ. حامد بن محمد الزين</div>
+      <div class="name-en">Hamed bin Mohammed Al-Zain</div>
 
-      <div class="role-ar">الرئيس التنفيذي</div>
-      <div class="role-en">Chief Executive Officer (CEO)</div>
+      <div class="role-ar">مدير العمليات</div>
+      <div class="role-en">Chief Operating Officer (COO)</div>
 
       <div class="grid">
         <div class="item">
           <small>الجوال</small>
-          <a href="tel:0543638431" dir="ltr">054 363 8431</a>
+          <a href="tel:+966510128214" dir="ltr">+966 51 012 8214</a>
         </div>
 
         <div class="item">
@@ -206,34 +215,36 @@
 
         <div class="item">
           <small>البريد</small>
-          <a href="mailto:ceo@aqarati.com.sa">ceo@aqarati.com.sa</a>
+          <a href="mailto:h.zain@aqarati.com.sa">h.zain@aqarati.com.sa</a>
         </div>
 
         <div class="item">
           <small>الموقع</small>
-          <a href="https://www.aqarati.com.sa" target="_blank">
+          <a href="https://www.aqarati.com.sa" target="_blank" rel="noopener">
             www.aqarati.com.sa
           </a>
         </div>
       </div>
 
       <div class="buttons">
-        <a class="btn call" href="tel:0543638431">
+        <a class="btn call" href="tel:+966510128214">
           <i class="fa-solid fa-phone"></i> اتصال
         </a>
-        <a class="btn" href="https://wa.me/966543638431">
+        <a class="btn" href="https://wa.me/966510128214">
           <i class="fa-brands fa-whatsapp"></i> واتساب
         </a>
         
-<a class="btn" href="حسين.vcf" download><i class="fa-solid fa-address-card"></i> حفظ جهة الاتصال</a>
+<a class="btn" href="حامد.vcf" download>
+  <i class="fa-solid fa-address-card"></i> حفظ جهة الاتصال
+</a>
 
-        <a class="btn" href="mailto:ceo@aqarati.com.sa">
+        <a class="btn" href="mailto:h.zain@aqarati.com.sa">
           <i class="fa-solid fa-envelope"></i> البريد
         </a>
       </div>
 
       <div class="location">
-        المملكة العربية السعودية – الرياض – طريق الملك عبدالعزيز – حي الربيع
+        المملكة العربية السعودية – الرياض – طريق الملك عبد العزيز – حي الربيع
       </div>
       <div class="location-en">
         Kingdom of Saudi Arabia – Riyadh – King Abdulaziz Road – Al Rabie District
@@ -249,6 +260,7 @@
 
   </div>
 
+  <!-- ✅ سكربت المشاركة المتوافق مع جميع الأجهزة -->
   
 
 </body>
