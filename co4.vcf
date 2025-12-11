@@ -1,8 +1,10 @@
 BEGIN:VCARD
 VERSION:3.0
 FN:أ. عصام بن فهد العسكر
-N:العسكر;عصام بن فهد;;;
-TITLE:Member of the Board of Directors
-TEL;TYPE=CELL:+966552020129
-EMAIL;TYPE=WORK:e.alasker@aqarati.com.sa
+N:العسكر;أ. عصام;;;
+ORG:Aqarati;
+EMAIL;type=INTERNET;type=WORK;type=pref:e.alasker@aqarati.com.sa
+TEL;type=WORK;type=VOICE;type=pref:+966552020129
+item1.URL;type=pref:https://www.aqarati.com.sa
+item1.X-ABLabel:الموقع
 END:VCARD
